@@ -1,0 +1,217 @@
+*{
+    margin:0;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background: hsla(221, 45%, 73%, 1);
+    background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    color: white;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+/* .active{
+
+} */
+/* js adding classes */
+.tab.current-tab{
+    background-color: rgb(111, 138, 184);
+    border: 1px black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.form-container.active{
+    scale:1;
+    opacity: 1;
+    display: flex;
+    position: fixed;
+    translate: -50% ;
+    top: 25%;
+    left: 50%;
+}
+.card{
+    padding-top: 5%;
+    width:500px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;;
+    gap: 30px;
+    position: relative;
+}
+.tabSwitchButtons{
+    display: flex;
+    /* margin: 0px; */
+    height:50px;
+    justify-content: space-between;
+    /* padding: 15px; */
+}
+button{
+    cursor: pointer;
+    color:white;
+    background:rgba(128, 128, 128, 0.448);
+    border-radius: 10px;
+    border:0px;
+    transition: 0.3s;
+    font-size: large;
+}
+#tab{
+    width: 100%;
+    height: 80%;
+    /* background-color:aliceblue; */
+}
+#loadingIconGif{
+    width: 280px;
+}
+.loading_container{
+    scale: 0;
+    position:fixed;
+    translate: -50% -50%;
+    top:45%;
+    left: 50%;
+}
+#yourLocationButton , #searchLocationButton {
+    font-family: 'Montserrat', sans-serif;
+}
+#yourLocationButton:hover , #searchLocationButton:hover {
+    background-color: rgba(128, 128, 128, 0.619);
+    color: white;
+    padding: 10px;
+}
+#grantAccess{
+    background-color: rgba(128, 128, 128, 0.619);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+#grantAccess:hover{
+    background-color: #73C56D;
+    color: white;
+    scale: 1.1;
+    border-radius: 10px;
+    padding: 10px;
+}
+.summer{
+    background-image:url('summergif.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+.winter{
+    background-image:url('wintergif.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+.rain{
+    background-image:url('raingif.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+.grant-location-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    scale:0;
+}
+#locationImg{
+    width: 30%;
+}
+#grantAccessBtn{
+    height: 50px;
+}
+.form-container{
+    /* scale: 0; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 40%;
+    scale: 0;
+}
+#searchBar{
+    border: none;
+    height: 20px;
+    width: calc(100% - 80px);
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+#searchBtn{
+    border-radius: 40%;
+}
+.btn:hover{
+    background-color:rgb(111, 138, 184);
+}
+.user-info-container{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.542);
+    padding: 30px;
+    border-radius: 20px;
+    gap: 20px;
+    scale: 0;
+    position: fixed;
+    translate: -50%;
+    top: 35%;
+    left: 50%;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.name{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size:xx-large;
+    font-weight: bolder;
+}
+#countryImage{
+    height: 50;
+    width: 70;
+}
+[data-weatherDesc]{
+    font-size: larger;
+    text-transform: capitalize;
+}
+[data-weatherIcon]{
+    width: 15%;
+}
+[data-temp]{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.parameter-container{
+    display: flex;
+    gap: 50px;
+}
+.parameter{
+    height: 10%;
+    width: 25%;
+    padding: 10px;
+    font-size: larger;
+}
+.not-found{
+    scale:0;
+    position: fixed;
+    translate: -50% -50%;
+    top: 50%;
+    left: 50%;
+}
+.active{
+    scale:1;
+}
